@@ -27,7 +27,10 @@ const Chart = (props) => {
                     borderColor: "#4B40EE",
                     fill: true,
                     borderWidth: 1,
-                    backgroundColor: gradient
+                    backgroundColor: gradient,
+                    datalabels: {
+                        color: "#44ff44"
+                    }
                 }
             ]
         }
@@ -66,6 +69,10 @@ const Chart = (props) => {
             legend: {
                 display: false
             }
+        },
+        tooltips: {
+            displayColors: false,
+            backgroundColor: "red"
         }   
         
     }
